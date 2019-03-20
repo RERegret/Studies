@@ -1,0 +1,10 @@
+def coffeemachine(coin):
+  if coin=100:
+    return 0,"coffee"
+    elif coin=200:
+      return 0,"capuchino"
+  else:
+       return coin,None
+       
+change,cup=coffeemachine(100)
+print(cup)
