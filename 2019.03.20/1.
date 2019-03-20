@@ -1,0 +1,23 @@
+using System;
+					
+public class Program
+{
+	static int Addition(int a, int b)
+	{
+		int ans = a + b;
+		return ans;
+	}
+	
+	static bool Test_ADD()
+	{
+	bool a = Addition(3,6) == 9;
+	bool b = Addition(3,-5) == -2;
+	return a & b ;
+	}
+	public static void Main()
+	{
+		Console.WriteLine(Addition(2,4));
+		Console.WriteLine(Test_ADD());
+		
+	}
+}
