@@ -1,0 +1,47 @@
+Matematikai függvény:
+Domain        Range
+-bizonyos pontokhoz bizonyos elemek hozzárendelése
+-Vannak elemeik
+-Összerendelhető, innen oda,iránya van, domainból mutat a range elemeire
+-megengedett több Domain elem ugyanarra a Range elemre
+-Minden alkatrészt felkell használni
+-például sqrt(x):
+nullában 0 az értéke, egyben egy(a gyöke),2-ben 1.4142.... 
+értelmezési tartomány: 0 vagy annál nagyobb x-ekkel fog működni
+Domain:0 és nagyobb számok Range: nulla és annál nagyobb valós számok
+-lehet olyan függvény,melynek egy paramétere van, pl:f(x),f(x,y)
+-függvénynek lehet több bemenő értéke, lehet visszajövő érték,  
+-f(x,y) két dimenziós bemenő érték, mert két értéke/paramértéke van
+-lehet akármennyi dimenziós
+-pont kétdimenziós helye:x,y kettő adat (3,4)
+-három dimenziós helye (5,7,-2)
+-128 dimenzióban 128 érték/hely
+-vektor origóból, vektor helyének koordinátáját adja meg
+-két pont távolsága:
+A(ax,ay) B(bx,by)
+(ax-bx)a másodikon+(bx-by)a másodikon és gyököt kell vonni(?)
+három dimenzióban is meglehet csinálni, pl:arcfelismerés
+felismerendő ember arcainak egy pont fog megfelelni (128 dimenziós térben), pontsorozat lesz mindegyik arc,
+megnézi, hogy az összes többi pontohoz milyen távolságban van, ha túl nagy a távolság azt mondja hogy nem ismeri fel
+-terra flop: lebegőpontos művelet másodpercenként=nem csak egész lehet, hanem tört szám is lehet,tizedes pont, ami bárhol
+lehet benne, megfelel kb a Float számtípusnak
+-lebegőpontos számításokban jó eszközök: videókártya --->pontokból hozza létre a képet,azok fényerejét és színét
+utasítás alapján dönti el, ez egy virtuális kép, sétál a szereplő lebeg a haja, megcsinállan a szemén a fény, vízfelületen
+visszatükröződik a fa tükörképe, ehhez kiválaszt referenciapontokat, és ezek koordinátáik rögzíti,lámpa fénysugarat indít ki,
+a felületet kilehet számolni, fényforrásból a fény ráesik a felületre, és kikell számolni, hogy hogyan verődik vissza attól
+függően hogy hogyan megy rá a fény, nem az összes fény verődik vissza, csomót elnyel, különböző fényekkel, és megkell nézni
+milyen irányba távozik, és ha pl a falra, akkor onnan is visszaverődik,és mindenhova visszaverődik, észre kell venni mikor ér
+hozzá a felülethez, és kikell számolni a fénysugár összes pattogását, és megkell nézni, hogy az úgy kibocsájtott
+ fénysugár milyen irányban pattog
+vissza, és kikell számolni hol merre pattog vissza
+csak felületről tud visszaverődni, legkevesebb szög a háromszög, a háromdimenziós kártyák mindent beburkolnak háromszögekkel, 
+nagyon kicsinek kell lennie, egy pixelesnek, 9 adat, ha beesik a fénysugár, megtudod határozni milyen irányba fog esni
+a rendszernek kitakarásokat és ilyeneket is kikell tudnia számolni, amihez irdatlan mennyiségű számolás kell, és kis
+háromszögekkel csinálja, ezért nem a CPU, hanem a GPU a legerősebb, és rengeteg processzor mag van benne emiatt,
+rettenesen meleg,
+- nem csak ez a technika létezik
+- 60 kép másodpercenként, 
+- az emberi szám 8 képkockától már folyamatos képet lát
+- mozi technikában másodpercenként 24 kocka, hogy ne villogjón minden kockát kétszer vetítenek ki
+- kicsit utána lehet ennek nézni
+- mesterséges intelligenciához ugyanez például
