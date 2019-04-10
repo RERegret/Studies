@@ -1,0 +1,79 @@
+import turtle
+import random
+
+wn = turtle.Screen()             # Set up the window and its attributes
+wn.bgcolor("lightyellow")
+tess = turtle.Turtle()           # create tess and set some attributes
+tess.penup()                     #ne húzzon vonalat maga után
+tess.goto(100,100)
+tess.dot("red")                  #legyen ott egy pont
+tess.goto(-100,100)
+tess.dot("blue")
+wn.exitonclick()
+
+Random pontra menésnél
+x = random.randint(-200,200)
+y = random.randint(-200,200)
+
+Random:
+for i in range(10):   
+    x = random.randint(-200,200)
+    y = random.randint(-200,200)
+    tess.goto(x,y)
+    tess.dot("red")
+    
+    sebesség változtatás:
+    tess.speed(0)
+    
+    teknős színe:
+        tess.color("red")
+        
+        egyik oldalt ilyen,másikon olyan:
+        if x>0:
+        tess.color("blue")
+    else
+        tess.color("red")
+        
+        random + számolja a különböző színek mennyiségét
+        kek = 0
+piros = 0
+for i in range(100):   
+    x = random.randint(-200,200)
+    y = random.randint(-200,200)
+    tess.goto(x,y)
+    if x>0:
+        tess.color("blue")
+        kek = kek + 1
+    else:
+        tess.color("red")
+        piros = piros + 1
+    tess.dot()
+print(kek,piros)
+
+
+Kör alakban színek:
+
+
+import turtle
+import random
+
+wn = turtle.Screen()             # Set up the window and its attributes
+wn.bgcolor("lightyellow")
+tess = turtle.Turtle()           # create tess and set some attributes
+tess.penup()
+tess.speed(0)
+kek = 0
+piros = 0
+for i in range(1000):   
+    x = random.randint(-200,200)
+    y = random.randint(-200,200)
+    tess.goto(x,y)
+    if (x**2 + y**2) > 200**2:
+        tess.color("blue")
+        kek = kek + 1
+    else:
+        tess.color("red")
+        piros = piros + 1
+    tess.dot()
+print(kek,piros)
+wn.exitonclick()
