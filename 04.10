@@ -1,0 +1,50 @@
+Python, random számok generálása:
+
+import random
+print( random,randint(1,90)) // random könyvtárban int szám
+
+Another one:
+
+import turtle
+import random
+
+wn = turtle.Screen()             # Set up the window and its attributes
+wn.bgcolor("lightgreen")
+
+
+tess = turtle.Turtle()           # create tess and set some attributes
+tess.color("hotpink")
+tess.pensize(5)
+
+alex = turtle.Turtle()           # create alex
+
+tess.forward(80)                 # Let tess draw an equilateral triangle
+tess.left(120)
+tess.forward(80)
+tess.left(120)
+tess.forward(80)
+tess.left(120)                   # complete the triangle
+
+tess.right(180)                  # turn tess around
+tess.forward(80)                 # move her away from the origin
+
+alex.forward(50)                 # make alex draw a square
+alex.left(90)
+alex.forward(50)
+alex.left(90)
+alex.forward(50)
+alex.left(90)
+alex.forward(50)
+alex.left(90)
+
+wn.exitonclick()
+
+
+pythonban ajánlott, hogy az osztály/sablon nagybetűvel kezdődjön,
+pythonban kb minden objektum, de nem lehet minden műveletet csinálni
+vannak egyszerű és összetett adattípúsok, ezeket gyárilag a nyelvvel kapunk, lehet általunk is csinálni
+pl: pont/vektor adattípus, origóból kiinduló vektorok, 
+vektor adattípus:2 koordinátája van
+
+programozók jobb szeretik, ha kódjuk hasonlít a beszédnyelvre
+
